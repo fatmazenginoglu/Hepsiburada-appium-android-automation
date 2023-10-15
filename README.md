@@ -9,5 +9,4 @@ Proje kapsamında ürün detay excel sayfasındaki 5 senaryo (1-2-3-4-28 nolu se
 
 Otomasyon çalışmasında Intellij-Java-Gherkin-Appium-Cucumber kullanılmıştır.
 
-Projede kullanılan Hepsiburada apk dosyası github projesinde bulunmaktadır. 
 
