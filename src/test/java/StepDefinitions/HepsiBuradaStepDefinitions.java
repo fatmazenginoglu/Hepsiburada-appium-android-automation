@@ -6,6 +6,8 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import util.DriverFactory;
 
+import javax.annotation.MatchesPattern;
+
 public class HepsiBuradaStepDefinitions {
     HepsiBuradaPages HepsiBuradaPages = new HepsiBuradaPages(DriverFactory.getDriver());
 
@@ -85,6 +87,43 @@ public class HepsiBuradaStepDefinitions {
     @When("Çöp kutusu ikonuna tıklayın")
     public void çöpKutusuIkonunaTıkayın() {
         HepsiBuradaPages.clkcopkutusu();
+    }
+
+    @When("Ürün resimleri arasında geçişler yapın")
+    public void ürünResimleriArasındaGeçişlerYapın() {
+        HepsiBuradaPages.clkphotos();
+    }
+
+    @Then("Ürün resimlerinin geldiği görülür")
+    public void ürünResimlerininGeldiğiGörülür() {
+        HepsiBuradaPages.chckphotos();
+    }
+    @When("Ürün resminin üzerine tıklayın")
+    public void ürünResmininÜzerineTıklayın() {
+        HepsiBuradaPages.clkbigphotos();
+    }
+
+    @When("Ürün küçültülmüş resimlere tıklayın")
+    public void ürünKüçültülmüşResimlereTıklayın() {
+        HepsiBuradaPages.clksmallphotos();
+    }
+    @Then("Ürün resimlerinin büyütülmüş geldiği görülür")
+    public void ürünResimlerininBüyütülmüşGeldiğiGörülür() {
+        HepsiBuradaPages.chckbigphotos();
+    }
+    @When("Copy butonuna tıklayın")
+    public void CopybutonunaTıklayın() {
+       HepsiBuradaPages.clkcopyBtn();
+    }
+
+    @Then("Android native share ekranı kapandığı görülür")
+    public void androidNativeShareEkranıKapandığıGörülür() {
+        HepsiBuradaPages.chckbigphotos();
+    }
+
+    @When("X butonuna tıklayın")
+    public void xButonunaTıklayın() {
+        HepsiBuradaPages.clkxBtn();
     }
 
 }

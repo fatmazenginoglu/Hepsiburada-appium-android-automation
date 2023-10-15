@@ -9,7 +9,7 @@ import io.cucumber.testng.CucumberOptions;
 @CucumberOptions(
         features = {"src/test/java/Features"},
         glue = {"StepDefinitions", "util"},
-        tags = "@UrunDetayKarsilastir-3",
+        tags = "@ÜrünDetayUrunFotograflari-4",
         plugin = {
                 "summary", "pretty", "html:Reports/CucumberReport/Reports.html",
         }

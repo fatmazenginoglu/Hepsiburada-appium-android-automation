@@ -24,6 +24,12 @@ public class HepsiBuradaPages {
     By karsilastirmalist=MobileBy.AndroidUIAutomator("new UiSelector().text(\"Karşılaştırma Listesi\")");
     By karsilastimaurun=MobileBy.AndroidUIAutomator("new UiSelector().text(\"Ürün karşılaştırma listenize eklenmiştir.\")");
     By copkutusuBtn=MobileBy.AndroidUIAutomator("new UiSelector().resourceId(\"com.pozitron.hepsiburada:id/compareRemoveIv\")");
+    By photosBtn=MobileBy.AndroidUIAutomator("new UiSelector().className(\"android.widget.LinearLayout\").index(2)");
+    By photo=MobileBy.AndroidUIAutomator("new UiSelector().resourceId(\"com.pozitron.hepsiburada:id/productImage\")");
+    By smallphoto=MobileBy.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/androidx.cardview.widget.CardView[2]/android.widget.ImageView");
+    By bigphoto=MobileBy.AndroidUIAutomator("new UiSelector().resourceId(\"com.pozitron.hepsiburada:id/zoomableImage\")");
+    By copyBtn=MobileBy.AndroidUIAutomator("new UiSelector().resourceId(\"android:id/copy_button\")");
+    By xBtn=MobileBy.AndroidUIAutomator("new UiSelector().resourceId(\"com.pozitron.hepsiburada:id/leftIcon\")");
 
     AppiumDriver driver;
     ElementHelper elementHelper;
@@ -55,5 +61,11 @@ public class HepsiBuradaPages {
     public void chckkarsilastirmalist() {elementHelper.checkVisible(karsilastirmalist);}
     public void chckkarsilatirmaurun() {elementHelper.checkVisible(karsilastimaurun);}
     public void clkcopkutusu() {driver.findElement(copkutusuBtn).click();}
-
+    public void clkphotos() {driver.findElement(photosBtn).click();}
+    public void chckphotos() {elementHelper.checkVisible(photo);}
+    public void clkbigphotos() {driver.findElement(photo).click();}
+    public void clksmallphotos() {driver.findElement(smallphoto).click();}
+    public void chckbigphotos() {elementHelper.checkVisible(bigphoto);}
+    public void clkcopyBtn() {driver.findElement(copyBtn).click();}
+    public void clkxBtn() {driver.findElement(xBtn).click();}
 }
