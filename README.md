@@ -1,4 +1,3 @@
-# fatmanur-appium-android-otomasyon
 Appium Android Otomasyon
 
 Hepsiburada Appium android otomasyon projesini içermektedir. 
